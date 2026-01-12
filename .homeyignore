@@ -1,0 +1,18 @@
+# Development files
+.git/
+.gitignore
+.vscode/
+node_modules/
+.env
+*.log
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Testing
+test/
+tests/
+*.test.js
+*.spec.js

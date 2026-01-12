@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" fill="#0077BE"/>
+  <circle cx="250" cy="200" r="80" fill="#FFD700"/>
+  <path d="M 100 350 Q 150 300 200 350 T 300 350 Q 350 300 400 350" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+  <text x="250" y="450" font-family="Arial" font-size="48" fill="#FFFFFF" text-anchor="middle">NWS</text>
+</svg>

@@ -1,0 +1,25 @@
+{
+  "name": "com.obtuseaglet.nws",
+  "version": "1.0.0",
+  "description": "National Weather Service integration for Homey",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homey",
+    "weather",
+    "nws",
+    "noaa",
+    "forecast",
+    "alerts"
+  ],
+  "author": "ObtuseAglet",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "homey": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

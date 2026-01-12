@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Environment variables
+env.json
+.env
+
+# Build output
+app.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# Added by Homey CLI
+/.homeybuild/
