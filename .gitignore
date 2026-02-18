@@ -7,6 +7,12 @@ env.json
 
 # Build output
 app.json
+.homeybuild/
+
+# TypeScript build artifacts
+*.js.map
+*.d.ts
+*.d.ts.map
 
 # Logs
 *.log

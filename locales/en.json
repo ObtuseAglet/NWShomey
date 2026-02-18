@@ -1,5 +1,138 @@
 {
   "settings": {
-    "title": "NWS Weather Settings"
+    "title": "NWS Weather Settings",
+    "latitude": {
+      "label": "Latitude",
+      "hint": "Decimal degrees (e.g. 39.7456)"
+    },
+    "longitude": {
+      "label": "Longitude",
+      "hint": "Decimal degrees (e.g. -97.0892)"
+    },
+    "zipCode": {
+      "label": "ZIP Code",
+      "hint": "US ZIP code (alternative to lat/lon)"
+    },
+    "locationName": {
+      "label": "Location Name"
+    },
+    "saveButton": "Save Location",
+    "testButton": "Test Connection",
+    "statusConnected": "Connected",
+    "statusError": "Connection error",
+    "pollingInterval": {
+      "label": "Weather Update Interval",
+      "hint": "How often to fetch new weather data"
+    },
+    "notificationsEnabled": {
+      "label": "Enable Severe Weather Notifications"
+    },
+    "notificationSeverity": {
+      "label": "Minimum Alert Severity",
+      "options": {
+        "minor": "Minor",
+        "moderate": "Moderate",
+        "severe": "Severe",
+        "extreme": "Extreme"
+      }
+    }
+  },
+  "flowCards": {
+    "triggers": {
+      "weather_alert_issued": {
+        "title": "A weather alert was issued",
+        "tokens": {
+          "alert_event": "Alert event",
+          "alert_headline": "Alert headline",
+          "alert_severity": "Alert severity",
+          "alert_area": "Alert area"
+        },
+        "args": {
+          "severity": "Minimum severity"
+        }
+      },
+      "temperature_threshold": {
+        "title": "Temperature crosses threshold",
+        "tokens": {
+          "temperature": "Temperature",
+          "unit": "Unit"
+        },
+        "args": {
+          "direction": "Direction",
+          "value": "Temperature value"
+        }
+      },
+      "weather_condition_changed": {
+        "title": "Weather condition changed",
+        "tokens": {
+          "old_condition": "Previous condition",
+          "new_condition": "New condition",
+          "description": "Description"
+        }
+      }
+    },
+    "conditions": {
+      "alert_active": {
+        "title": "A weather alert is active",
+        "args": {
+          "severity": "Minimum severity"
+        }
+      },
+      "temperature_is": {
+        "title": "Current temperature is !{{above|below}} {{value}}°F",
+        "args": {
+          "direction": "Direction",
+          "value": "Temperature value"
+        }
+      },
+      "forecast_includes": {
+        "title": "Forecast calls for {{condition}}",
+        "args": {
+          "condition": "Condition",
+          "period": "Time period"
+        }
+      }
+    },
+    "actions": {
+      "get_current_conditions": {
+        "title": "Get current weather conditions",
+        "tokens": {
+          "temperature": "Temperature",
+          "humidity": "Humidity",
+          "wind_speed": "Wind speed",
+          "description": "Description"
+        }
+      },
+      "get_forecast": {
+        "title": "Get weather forecast",
+        "args": {
+          "period": "Period (today, tonight, tomorrow)"
+        },
+        "tokens": {
+          "forecast_text": "Forecast text"
+        }
+      },
+      "refresh_weather_data": {
+        "title": "Refresh weather data"
+      },
+      "speak_weather": {
+        "title": "Speak current weather conditions"
+      }
+    }
+  },
+  "capabilities": {
+    "weather_description": {
+      "title": "Weather description"
+    },
+    "weather_alert_active": {
+      "title": "Weather alert active"
+    }
+  },
+  "errors": {
+    "location_not_configured": "Location not configured. Please set your location in the app settings.",
+    "api_unavailable": "NWS API is currently unavailable. Retrying...",
+    "invalid_coordinates": "Invalid coordinates. Please enter a valid US latitude and longitude.",
+    "outside_coverage": "Location is outside NWS coverage area (US and territories only).",
+    "zip_lookup_failed": "Could not look up ZIP code coordinates."
   }
 }

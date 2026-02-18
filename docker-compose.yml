@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  dev:
+    image: mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm
+    volumes:
+      - .:/workspace:cached
+      - node_modules:/workspace/node_modules
+    working_dir: /workspace
+    command: sleep infinity
+    environment:
+      - NODE_ENV=development
+    ports:
+      - '9229:9229'
+
+volumes:
+  node_modules:
