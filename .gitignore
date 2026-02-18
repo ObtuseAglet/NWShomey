@@ -7,6 +7,16 @@ env.json
 
 # Build output
 app.json
+.homeybuild/
+
+# TypeScript build artifacts (exclude generated files only)
+*.js.map
+*.d.ts
+*.d.ts.map
+
+# Un-ignore hand-authored declaration files in types/
+!types/
+!types/**
 
 # Logs
 *.log
