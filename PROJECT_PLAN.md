@@ -25,7 +25,7 @@ agent for implementation.
 - **Language**: TypeScript 5 (compiled to CommonJS for Homey SDK)
 - **Linting / Formatting**: Biome.js
 - **Platform**: Homey SDK v3 — `local` and `cloud` platforms
-- **Dev Environment**: Docker Compose (see `docker-compose.yml`)
+- **Dev Environment**: VS Code Dev Container (`.devcontainer/devcontainer.json`)
 - **Testing**: Jest + ts-jest (added in Phase 8)
 - **API**: National Weather Service — `https://api.weather.gov` (no API key required)
 
@@ -39,11 +39,10 @@ agent for implementation.
 - Converted `app.js` → `app.ts` (TypeScript)
 - Added `tsconfig.json` for TypeScript compilation
 - Added `biome.json` for Biome.js linting and formatting
-- Added `docker-compose.yml` for Docker-based dev environment
 - Created `.homeycompose/app.json` app manifest source
 - Updated `package.json` with dev dependencies and scripts
 - Expanded `locales/en.json` with all planned translation keys
-- Updated `.devcontainer/devcontainer.json` to use docker-compose
+- Updated `.devcontainer/devcontainer.json` with Biome VS Code extension and Homey CLI setup
 - Updated `.gitignore` for TypeScript build artifacts
 
 ### Developer Commands (established in this phase)
@@ -876,7 +875,7 @@ End-to-end testing, documentation finalization, and app store preparation.
 
 | Phase | Description | Depends On | Effort |
 |-------|-------------|------------|--------|
-| 1 | Project Infrastructure (TypeScript, Biome, Docker) | — | ✅ Done |
+| 1 | Project Infrastructure (TypeScript, Biome) | — | ✅ Done |
 | 2 | NWS API Client | 1 | Medium |
 | 3 | Location Management & Settings | 2 | Medium |
 | 4 | Weather Device Driver | 3 | Large |

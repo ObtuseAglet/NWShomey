@@ -2,9 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
 	"name": "NWS Weather Homey App",
-	"dockerComposeFile": "../docker-compose.yml",
-	"service": "dev",
-	"workspaceFolder": "/workspace",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
 
 	// Features to add to the dev container.
 	"features": {
