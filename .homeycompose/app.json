@@ -1,0 +1,24 @@
+{
+  "id": "com.obtuseaglet.nws",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": ["local", "cloud"],
+  "name": {
+    "en": "NWS Weather"
+  },
+  "description": {
+    "en": "National Weather Service integration for Homey"
+  },
+  "category": ["weather"],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "ObtuseAglet"
+  },
+  "brandColor": "#003366"
+}
