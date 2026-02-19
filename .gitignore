@@ -5,8 +5,8 @@ node_modules/
 env.json
 .env
 
-# Build output
-app.json
+# Build output (generated root app.json, not .homeycompose/app.json source)
+/app.json
 .homeybuild/
 
 # TypeScript build artifacts (exclude generated files only)
